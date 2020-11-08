@@ -14,6 +14,12 @@ Plugin 'vim-syntastic/syntastic'
 
 Plugin 'nvie/vim-flake8'
 
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
 call vundle#end()
 filetype plugin indent on
 
@@ -21,6 +27,7 @@ set foldmethod=indent
 set foldlevel=99
 
 set encoding=utf-8
+set nu
 
 au BufNewFile,BufRead *.py
 	\ set tabstop=4 |
@@ -51,6 +58,7 @@ EOF
 
 let python_highlight_all=1
 syntax on
+colorscheme monokai-bold
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
